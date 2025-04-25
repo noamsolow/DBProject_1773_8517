@@ -1,0 +1,1201 @@
+
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (1, 14, '2024-06-26', '2025-06-25', 'Kimberly Todd', 'Calibration performed', 199.74);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (2, 757, '2024-06-30', '2025-09-03', 'Dr. Kim Wilson', 'Cleaned and tested', 228.03);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (3, 82, '2025-03-21', '2025-09-18', 'Robert Daniels', 'Calibration performed', 106.73);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (4, 1180, '2024-04-25', '2025-10-06', 'Jerry Chavez', 'Replaced parts', 234.14);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (5, 1102, '2024-11-17', '2025-08-07', 'Micheal Maddox', 'Replaced parts', 64.14);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (6, 486, '2025-02-28', '2025-06-08', 'Christopher Hernandez', 'Cleaned and tested', 139.74);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (7, 1146, '2024-05-19', '2025-10-02', 'Madison Gonzalez', 'Calibration performed', 353.97);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (8, 595, '2024-07-11', '2025-09-28', 'William Smith', 'Routine maintenance', 137.0);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (9, 650, '2024-05-11', '2025-08-07', 'Calvin Schultz', 'Routine maintenance', 349.99);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (10, 783, '2024-08-31', '2025-05-26', 'Lisa Pruitt', 'Replaced cable', 481.06);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (11, 765, '2024-12-24', '2025-06-22', 'Michael Duncan', 'Cleaned and tested', 395.98);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (12, 395, '2024-12-21', '2025-07-28', 'Holly Johnson', 'Replaced cable', 381.23);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (13, 62, '2024-12-16', '2025-08-31', 'Joshua Knight', 'Replaced cable', 443.3);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (14, 1035, '2024-11-22', '2025-09-20', 'Carl Huang', 'Cleaned and tested', 217.37);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (15, 1046, '2024-07-01', '2025-05-27', 'Kim Wilson', 'Routine maintenance', 355.85);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (16, 399, '2024-06-15', '2025-07-29', 'Andrew Boyer', 'Cleaned and tested', 364.33);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (17, 615, '2024-09-01', '2025-08-14', 'Robert Ramos', 'Routine maintenance', 272.94);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (18, 568, '2024-09-02', '2025-08-24', 'Theresa Hester', 'Replaced cable', 485.87);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (19, 607, '2024-07-03', '2025-06-15', 'Matthew Lee', 'Replaced parts', 192.78);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (20, 472, '2024-08-04', '2025-09-06', 'Kathryn Castillo', 'Cleaned and tested', 470.95);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (21, 4, '2025-02-04', '2025-09-08', 'Kimberly Reyes', 'Replaced cable', 73.19);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (22, 230, '2025-01-24', '2025-06-13', 'Lisa Villarreal', 'Routine maintenance', 185.94);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (23, 512, '2024-10-09', '2025-10-20', 'Brian Houston', 'Replaced parts', 131.39);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (24, 31, '2024-11-19', '2025-05-27', 'Jessica Berry', 'Calibration performed', 296.88);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (25, 650, '2024-05-03', '2025-09-30', 'Erin Mcneil', 'Replaced cable', 88.33);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (26, 786, '2024-05-06', '2025-08-21', 'Michael Moore', 'Routine maintenance', 323.25);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (27, 392, '2025-02-13', '2025-10-01', 'Ashley Shea', 'Calibration performed', 416.18);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (28, 848, '2025-01-04', '2025-08-31', 'Gloria Simon', 'Replaced parts', 345.46);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (29, 975, '2025-01-23', '2025-06-07', 'Patrick Wright', 'Routine maintenance', 226.56);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (30, 1113, '2024-07-17', '2025-07-13', 'Gina Moreno', 'Replaced parts', 410.68);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (31, 1002, '2025-03-29', '2025-07-25', 'Ryan Huber', 'Cleaned and tested', 192.43);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (32, 926, '2025-04-23', '2025-09-23', 'Dawn Williams', 'Cleaned and tested', 384.81);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (33, 333, '2024-07-02', '2025-10-11', 'Eric Stephens', 'Calibration performed', 255.47);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (34, 216, '2025-01-14', '2025-08-28', 'Leah Walls', 'Replaced parts', 453.08);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (35, 607, '2025-04-14', '2025-10-08', 'Christina Hanson', 'Routine maintenance', 165.61);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (36, 1147, '2024-11-09', '2025-06-18', 'Alex Palmer', 'Replaced parts', 72.07);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (37, 541, '2024-09-07', '2025-08-21', 'Tony Brewer', 'Cleaned and tested', 382.37);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (38, 392, '2024-06-28', '2025-09-19', 'Michael Harris', 'Replaced parts', 487.89);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (39, 1033, '2024-11-06', '2025-08-13', 'Michele Dominguez', 'Replaced parts', 153.42);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (40, 187, '2025-02-21', '2025-09-04', 'Samantha Ramirez', 'Replaced parts', 370.03);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (41, 816, '2024-11-24', '2025-08-04', 'Rachel Donaldson', 'Routine maintenance', 112.47);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (42, 203, '2024-11-19', '2025-10-17', 'Christopher Mcbride', 'Calibration performed', 291.36);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (43, 100, '2025-03-29', '2025-09-19', 'Cody Robinson', 'Cleaned and tested', 143.68);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (44, 1037, '2024-12-20', '2025-06-20', 'Tara Chavez', 'Cleaned and tested', 388.52);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (45, 129, '2024-09-21', '2025-10-20', 'Tiffany Reyes', 'Cleaned and tested', 247.53);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (46, 898, '2025-03-11', '2025-09-12', 'Jim Miller', 'Calibration performed', 386.22);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (47, 1159, '2024-05-07', '2025-09-06', 'Christopher Long', 'Routine maintenance', 375.32);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (48, 454, '2025-02-18', '2025-09-07', 'Jose Ballard', 'Cleaned and tested', 124.35);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (49, 305, '2025-03-15', '2025-10-20', 'Andrew Smith', 'Routine maintenance', 233.92);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (50, 127, '2024-11-17', '2025-07-09', 'Thomas Frazier', 'Calibration performed', 273.72);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (51, 408, '2024-08-11', '2025-09-10', 'April Smith', 'Calibration performed', 61.92);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (52, 685, '2024-08-06', '2025-08-11', 'Tiffany Grant', 'Calibration performed', 186.26);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (53, 203, '2025-03-03', '2025-06-15', 'Cynthia King', 'Routine maintenance', 201.67);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (54, 798, '2025-02-07', '2025-09-02', 'Donald Thompson', 'Calibration performed', 381.37);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (55, 807, '2025-01-17', '2025-06-09', 'Corey Austin', 'Cleaned and tested', 353.3);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (56, 457, '2025-02-28', '2025-10-04', 'Ms. Sheila Hendricks', 'Replaced parts', 60.37);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (57, 220, '2024-08-26', '2025-06-09', 'Sabrina Ryan', 'Cleaned and tested', 371.53);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (58, 352, '2025-02-01', '2025-07-20', 'Lisa Stevenson', 'Cleaned and tested', 475.82);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (59, 292, '2025-04-17', '2025-07-24', 'Katherine Bishop', 'Replaced parts', 208.63);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (60, 450, '2024-07-31', '2025-10-04', 'Catherine Gardner MD', 'Replaced cable', 278.84);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (61, 43, '2024-12-13', '2025-07-04', 'Elizabeth Nguyen', 'Replaced parts', 255.95);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (62, 70, '2024-12-25', '2025-07-10', 'James Garrett', 'Calibration performed', 487.84);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (63, 925, '2025-02-23', '2025-07-03', 'Gerald Barnes', 'Routine maintenance', 233.6);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (64, 524, '2024-06-20', '2025-06-27', 'Michele Hughes', 'Replaced parts', 119.78);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (65, 809, '2024-12-31', '2025-06-24', 'Gregory Robles', 'Calibration performed', 162.37);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (66, 422, '2024-08-20', '2025-10-15', 'Barbara Harris', 'Replaced cable', 278.15);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (67, 61, '2025-03-02', '2025-08-18', 'Amanda Parker', 'Calibration performed', 346.59);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (68, 745, '2025-01-24', '2025-10-07', 'Hannah Garrison', 'Replaced parts', 255.11);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (69, 229, '2024-12-16', '2025-06-01', 'Brenda Berry', 'Routine maintenance', 97.89);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (70, 721, '2024-10-15', '2025-06-29', 'Sandy Weber', 'Calibration performed', 233.88);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (71, 386, '2025-03-08', '2025-09-27', 'Jonathan Thompson', 'Cleaned and tested', 369.38);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (72, 375, '2025-04-15', '2025-09-12', 'Ms. Jessica Myers', 'Routine maintenance', 202.23);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (73, 465, '2025-03-26', '2025-07-17', 'Charles Martin', 'Calibration performed', 381.14);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (74, 824, '2024-09-13', '2025-08-01', 'Nicole Bryant', 'Cleaned and tested', 334.14);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (75, 814, '2024-11-19', '2025-08-17', 'Kathryn Schultz', 'Calibration performed', 75.39);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (76, 545, '2025-04-14', '2025-09-10', 'Michael Walker', 'Routine maintenance', 293.97);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (77, 1077, '2025-02-23', '2025-07-18', 'Jeffrey Green', 'Replaced parts', 421.98);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (78, 239, '2024-12-09', '2025-09-18', 'Justin Leon', 'Calibration performed', 251.81);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (79, 1005, '2024-08-12', '2025-07-28', 'Melissa Hood', 'Replaced cable', 433.69);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (80, 791, '2024-12-24', '2025-07-01', 'Michael Schmidt', 'Routine maintenance', 304.92);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (81, 150, '2025-03-14', '2025-05-26', 'Christopher Rivera', 'Replaced parts', 259.66);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (82, 696, '2025-03-27', '2025-10-21', 'Heather Underwood', 'Calibration performed', 201.43);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (83, 689, '2025-01-10', '2025-07-05', 'Kelsey Lewis', 'Cleaned and tested', 481.85);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (84, 1112, '2024-05-05', '2025-07-31', 'Andrew Freeman', 'Replaced cable', 220.13);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (85, 876, '2024-12-03', '2025-09-11', 'Tammy Mclaughlin', 'Calibration performed', 256.0);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (86, 775, '2024-10-22', '2025-08-30', 'Tyler Benton', 'Replaced cable', 455.07);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (87, 1128, '2024-11-05', '2025-08-06', 'David Jenkins', 'Calibration performed', 62.5);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (88, 1086, '2025-01-11', '2025-08-10', 'Sara Bauer', 'Routine maintenance', 61.28);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (89, 991, '2024-06-16', '2025-09-30', 'Sara Contreras', 'Replaced cable', 337.74);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (90, 243, '2024-06-20', '2025-07-15', 'Cassandra Austin', 'Calibration performed', 357.03);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (91, 889, '2025-03-27', '2025-06-25', 'Brett Sullivan', 'Cleaned and tested', 420.19);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (92, 118, '2025-03-02', '2025-07-31', 'Jessica Hernandez', 'Cleaned and tested', 162.5);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (93, 239, '2024-08-08', '2025-08-27', 'Thomas Roman', 'Routine maintenance', 109.14);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (94, 935, '2024-12-31', '2025-09-04', 'Bobby Jones', 'Replaced cable', 330.98);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (95, 204, '2024-10-12', '2025-09-28', 'Peter Newman', 'Calibration performed', 375.24);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (96, 26, '2025-02-19', '2025-09-16', 'Eric Jackson', 'Calibration performed', 108.0);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (97, 462, '2024-09-17', '2025-07-05', 'Kathryn Blackburn', 'Replaced cable', 362.44);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (98, 170, '2025-03-19', '2025-09-24', 'Matthew Sanchez', 'Cleaned and tested', 235.96);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (99, 24, '2024-08-17', '2025-09-06', 'Sergio Adkins', 'Replaced parts', 256.97);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (100, 746, '2024-12-18', '2025-09-29', 'George Lawson', 'Replaced parts', 476.39);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (101, 727, '2024-07-30', '2025-08-31', 'Tyler Williams', 'Routine maintenance', 460.8);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (102, 1054, '2024-05-19', '2025-05-31', 'Brandon Beasley', 'Calibration performed', 85.68);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (103, 200, '2024-11-15', '2025-06-12', 'Aaron Hammond', 'Calibration performed', 457.25);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (104, 56, '2024-08-28', '2025-08-02', 'Melissa Jackson', 'Calibration performed', 61.85);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (105, 1015, '2024-06-21', '2025-06-23', 'Steven Jackson', 'Replaced parts', 366.28);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (106, 755, '2024-12-02', '2025-07-11', 'Emily Gonzalez', 'Replaced cable', 122.46);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (107, 419, '2024-05-14', '2025-10-13', 'Vincent Watkins', 'Replaced parts', 209.96);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (108, 1111, '2024-08-17', '2025-07-12', 'Mary Jackson', 'Calibration performed', 200.1);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (109, 373, '2024-10-13', '2025-07-01', 'Mark Butler', 'Routine maintenance', 272.38);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (110, 1027, '2024-12-12', '2025-08-30', 'Jennifer Finley', 'Routine maintenance', 381.12);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (111, 191, '2024-06-10', '2025-09-27', 'Denise Price', 'Replaced cable', 211.66);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (112, 338, '2024-10-17', '2025-06-09', 'Melissa Mason', 'Cleaned and tested', 297.64);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (113, 900, '2025-04-13', '2025-07-28', 'George Mccarthy', 'Routine maintenance', 421.78);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (114, 646, '2025-03-26', '2025-07-04', 'Mark Woodard Jr.', 'Replaced cable', 273.36);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (115, 505, '2024-06-22', '2025-05-28', 'Lauren Miller', 'Replaced parts', 493.41);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (116, 927, '2025-01-18', '2025-09-01', 'Glenn Howell', 'Replaced cable', 302.43);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (117, 1085, '2024-07-02', '2025-08-24', 'John Hayes', 'Routine maintenance', 254.69);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (118, 429, '2024-11-20', '2025-09-10', 'Devin Anderson', 'Cleaned and tested', 285.26);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (119, 1197, '2024-12-08', '2025-08-22', 'Billy Silva', 'Calibration performed', 236.77);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (120, 1060, '2024-10-17', '2025-07-05', 'Ashley Smith', 'Calibration performed', 379.72);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (121, 1141, '2025-01-13', '2025-08-14', 'Nathan Massey', 'Replaced cable', 206.93);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (122, 306, '2024-05-08', '2025-07-14', 'Daniel Reid PhD', 'Routine maintenance', 116.34);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (123, 894, '2024-07-21', '2025-10-17', 'Carla Cox', 'Routine maintenance', 396.99);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (124, 822, '2025-01-14', '2025-08-06', 'Jason Taylor', 'Replaced cable', 445.62);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (125, 539, '2024-07-23', '2025-09-07', 'Jenny Burgess', 'Routine maintenance', 245.32);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (126, 429, '2024-09-06', '2025-08-19', 'Nicole Hall', 'Calibration performed', 129.75);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (127, 1141, '2024-05-03', '2025-09-16', 'Amy Long', 'Replaced cable', 227.42);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (128, 118, '2024-08-26', '2025-05-30', 'Kimberly Hall', 'Replaced cable', 134.24);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (129, 1177, '2024-12-26', '2025-07-11', 'Jennifer Davidson', 'Cleaned and tested', 212.24);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (130, 421, '2024-12-27', '2025-05-29', 'William Henderson', 'Replaced cable', 438.2);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (131, 554, '2024-09-06', '2025-10-20', 'Elizabeth Wilson', 'Replaced cable', 233.26);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (132, 758, '2024-10-21', '2025-06-22', 'Michael Lopez', 'Routine maintenance', 451.07);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (133, 383, '2024-07-24', '2025-08-07', 'Mark Mccann', 'Replaced parts', 413.25);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (134, 65, '2025-01-09', '2025-05-29', 'John Lawson', 'Replaced cable', 488.92);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (135, 461, '2024-11-05', '2025-07-26', 'Timothy Wilson', 'Replaced parts', 266.31);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (136, 457, '2025-02-02', '2025-06-08', 'Kyle Jones', 'Replaced cable', 123.2);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (137, 73, '2024-07-12', '2025-06-04', 'Cathy Williams', 'Routine maintenance', 416.33);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (138, 314, '2025-04-21', '2025-05-28', 'Matthew Reeves', 'Cleaned and tested', 390.52);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (139, 730, '2024-11-14', '2025-08-17', 'Regina Williams', 'Replaced cable', 295.12);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (140, 580, '2024-12-07', '2025-08-21', 'Kelly Hill', 'Cleaned and tested', 443.4);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (141, 851, '2025-02-13', '2025-06-29', 'Lonnie Martinez', 'Cleaned and tested', 461.5);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (142, 35, '2024-12-12', '2025-09-08', 'Timothy Davidson', 'Replaced cable', 342.87);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (143, 1053, '2025-02-23', '2025-08-28', 'Patricia Taylor', 'Replaced parts', 369.38);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (144, 821, '2025-04-17', '2025-07-01', 'William Santana', 'Replaced cable', 167.97);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (145, 1181, '2025-04-07', '2025-08-14', 'Lori Bernard', 'Calibration performed', 457.65);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (146, 1019, '2024-06-19', '2025-09-12', 'Charles Henson', 'Cleaned and tested', 365.24);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (147, 202, '2024-11-27', '2025-09-22', 'Keith Parker', 'Replaced parts', 422.42);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (148, 408, '2025-01-18', '2025-08-16', 'Scott Higgins', 'Calibration performed', 206.49);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (149, 72, '2025-01-08', '2025-08-26', 'Alexandra Vazquez', 'Calibration performed', 441.02);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (150, 198, '2024-12-28', '2025-10-13', 'Kevin Guerrero', 'Routine maintenance', 235.34);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (151, 311, '2024-08-16', '2025-10-10', 'Janet Arellano', 'Replaced cable', 81.86);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (152, 222, '2024-10-21', '2025-08-19', 'Michelle Edwards', 'Cleaned and tested', 341.87);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (153, 689, '2025-03-22', '2025-07-23', 'Lisa Collins', 'Replaced parts', 223.57);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (154, 428, '2024-12-09', '2025-10-20', 'Jacqueline Jones', 'Replaced cable', 337.41);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (155, 37, '2024-12-23', '2025-08-09', 'William Moore', 'Routine maintenance', 405.39);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (156, 704, '2024-07-11', '2025-06-17', 'Seth Richardson', 'Calibration performed', 394.69);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (157, 927, '2025-02-07', '2025-07-07', 'Terry Kerr', 'Routine maintenance', 399.18);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (158, 880, '2024-07-07', '2025-09-12', 'Wyatt Baker', 'Replaced cable', 376.87);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (159, 403, '2024-09-23', '2025-07-20', 'Mary Sanders', 'Replaced cable', 254.48);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (160, 185, '2025-02-12', '2025-09-17', 'Paul Rodgers', 'Calibration performed', 64.16);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (161, 726, '2025-01-02', '2025-09-29', 'Robert Garcia', 'Cleaned and tested', 130.98);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (162, 364, '2024-05-22', '2025-05-27', 'Kelly Frost', 'Cleaned and tested', 308.59);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (163, 640, '2025-02-28', '2025-06-28', 'Jessica Thompson', 'Calibration performed', 150.38);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (164, 1183, '2024-10-15', '2025-10-06', 'Regina Berger', 'Cleaned and tested', 226.69);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (165, 795, '2025-02-07', '2025-10-15', 'William Cook', 'Cleaned and tested', 409.06);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (166, 580, '2024-06-01', '2025-06-15', 'Teresa Hudson', 'Calibration performed', 178.72);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (167, 871, '2024-07-05', '2025-08-01', 'Megan Vance', 'Routine maintenance', 401.43);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (168, 696, '2024-11-07', '2025-05-30', 'Evan Jimenez', 'Calibration performed', 391.91);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (169, 1062, '2025-04-12', '2025-09-25', 'Christian Patterson', 'Routine maintenance', 187.06);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (170, 476, '2025-04-10', '2025-09-07', 'Jane Shaw', 'Calibration performed', 392.26);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (171, 490, '2024-05-26', '2025-09-06', 'Timothy Christensen', 'Replaced parts', 279.4);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (172, 1127, '2024-12-02', '2025-06-20', 'Scott Barnett', 'Calibration performed', 98.81);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (173, 390, '2024-08-08', '2025-06-18', 'Jennifer Mcintosh', 'Replaced cable', 479.96);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (174, 938, '2024-09-02', '2025-06-26', 'Austin Mckay', 'Replaced parts', 52.78);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (175, 988, '2024-10-14', '2025-06-22', 'Catherine Robinson', 'Routine maintenance', 177.52);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (176, 1135, '2024-06-08', '2025-09-29', 'Brad Kelley', 'Routine maintenance', 167.61);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (177, 563, '2025-01-13', '2025-09-06', 'Jennifer Garner', 'Replaced cable', 317.32);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (178, 731, '2024-11-20', '2025-09-24', 'Lynn Henderson', 'Replaced parts', 425.22);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (179, 985, '2025-03-16', '2025-08-25', 'Thomas Hurst', 'Replaced cable', 149.9);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (180, 1082, '2024-11-03', '2025-09-01', 'Joseph Alexander', 'Replaced parts', 116.21);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (181, 891, '2025-02-25', '2025-10-16', 'Brian Cox', 'Replaced cable', 278.01);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (182, 950, '2024-08-16', '2025-06-07', 'George Nguyen', 'Replaced cable', 306.76);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (183, 1183, '2025-02-21', '2025-09-18', 'Angela Sherman', 'Replaced parts', 136.96);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (184, 1115, '2024-11-06', '2025-09-14', 'William Acosta II', 'Calibration performed', 411.64);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (185, 1191, '2024-08-02', '2025-10-12', 'Melissa Jones', 'Calibration performed', 418.76);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (186, 50, '2024-12-10', '2025-10-15', 'Jennifer Boyd', 'Routine maintenance', 141.9);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (187, 148, '2025-02-22', '2025-06-25', 'Patricia Wagner', 'Calibration performed', 309.0);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (188, 505, '2024-10-13', '2025-08-23', 'Andrew Black', 'Replaced cable', 299.91);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (189, 765, '2025-01-25', '2025-07-19', 'Deborah Murillo', 'Replaced parts', 191.97);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (190, 926, '2024-07-12', '2025-05-29', 'Tracey Miller', 'Replaced parts', 102.86);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (191, 302, '2024-07-27', '2025-08-20', 'Erica Howell', 'Replaced parts', 385.44);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (192, 352, '2024-12-14', '2025-06-24', 'Diane Rogers', 'Replaced parts', 324.56);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (193, 895, '2025-03-13', '2025-09-21', 'Melissa Hays', 'Replaced parts', 422.51);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (194, 1092, '2025-01-20', '2025-06-01', 'Maria Lawrence', 'Replaced cable', 359.85);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (195, 1052, '2024-12-14', '2025-08-19', 'Jason Nguyen', 'Replaced parts', 77.9);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (196, 1157, '2025-01-15', '2025-07-29', 'Pamela Alvarado', 'Replaced parts', 171.27);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (197, 594, '2024-09-13', '2025-07-16', 'Kaitlyn Werner', 'Routine maintenance', 253.81);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (198, 1146, '2025-01-15', '2025-09-19', 'Melissa Nelson', 'Cleaned and tested', 343.97);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (199, 938, '2024-12-26', '2025-08-06', 'Austin Murray', 'Calibration performed', 391.79);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (200, 635, '2024-12-12', '2025-08-26', 'Joseph Cole', 'Calibration performed', 484.52);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (201, 678, '2024-12-25', '2025-08-18', 'Sandra Coleman', 'Routine maintenance', 482.85);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (202, 31, '2024-06-13', '2025-07-19', 'Tiffany Pittman', 'Replaced parts', 199.61);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (203, 672, '2025-03-23', '2025-08-23', 'Terry Adams', 'Cleaned and tested', 123.94);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (204, 1169, '2024-10-12', '2025-09-30', 'Denise Burns', 'Routine maintenance', 324.54);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (205, 60, '2025-04-23', '2025-06-12', 'Willie Stevens', 'Calibration performed', 83.08);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (206, 290, '2024-12-03', '2025-06-11', 'Gregory Thompson', 'Calibration performed', 111.99);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (207, 1089, '2024-12-17', '2025-06-10', 'Alan Clark', 'Replaced parts', 401.95);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (208, 1184, '2024-08-26', '2025-10-06', 'Ryan Lee', 'Routine maintenance', 102.09);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (209, 14, '2025-01-22', '2025-07-18', 'Richard Wall', 'Cleaned and tested', 290.97);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (210, 699, '2025-03-04', '2025-10-03', 'Ashley Schwartz', 'Routine maintenance', 208.25);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (211, 200, '2024-10-12', '2025-09-20', 'Lance Holloway', 'Replaced cable', 102.96);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (212, 926, '2024-09-14', '2025-10-18', 'Christopher Goodwin', 'Cleaned and tested', 416.13);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (213, 632, '2024-09-28', '2025-08-13', 'Ann Martinez', 'Replaced parts', 193.25);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (214, 804, '2025-04-03', '2025-07-14', 'Dr. Crystal Murray DDS', 'Calibration performed', 197.01);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (215, 914, '2024-12-21', '2025-06-15', 'Gabriel Manning', 'Calibration performed', 232.99);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (216, 560, '2024-08-12', '2025-06-27', 'David Hampton', 'Replaced cable', 176.13);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (217, 872, '2025-04-02', '2025-10-18', 'Jamie Wallace', 'Replaced parts', 326.48);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (218, 573, '2025-04-02', '2025-07-06', 'Mark Miller', 'Calibration performed', 137.82);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (219, 316, '2025-04-22', '2025-09-13', 'Joann Campbell', 'Replaced parts', 315.23);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (220, 42, '2024-09-09', '2025-10-04', 'Maria Jacobs', 'Calibration performed', 352.22);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (221, 14, '2025-01-22', '2025-08-20', 'Noah May', 'Replaced parts', 107.58);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (222, 1091, '2024-11-14', '2025-07-25', 'Darryl Roth', 'Routine maintenance', 83.38);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (223, 556, '2025-01-06', '2025-08-09', 'Ricardo Payne', 'Cleaned and tested', 256.11);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (224, 921, '2024-10-18', '2025-07-02', 'Yolanda Patel', 'Routine maintenance', 499.06);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (225, 201, '2024-08-18', '2025-06-01', 'Mr. Mason Ellis', 'Calibration performed', 162.98);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (226, 75, '2025-01-16', '2025-10-04', 'Tina Mitchell', 'Cleaned and tested', 444.25);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (227, 891, '2025-02-14', '2025-07-12', 'William Phelps', 'Replaced parts', 442.84);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (228, 570, '2024-08-11', '2025-10-19', 'Diana Chan', 'Replaced parts', 164.65);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (229, 1062, '2024-06-22', '2025-10-20', 'Zachary Thomas', 'Replaced parts', 122.16);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (230, 1099, '2024-09-07', '2025-06-28', 'Dawn Jones', 'Replaced parts', 206.26);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (231, 848, '2025-03-25', '2025-10-06', 'Victor Tate', 'Replaced parts', 250.94);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (232, 552, '2024-12-10', '2025-08-16', 'Carlos Wilson', 'Calibration performed', 390.16);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (233, 516, '2025-01-29', '2025-08-20', 'Michael Cross', 'Replaced parts', 448.39);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (234, 561, '2024-09-14', '2025-09-19', 'Jose Arias', 'Calibration performed', 223.33);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (235, 945, '2024-11-21', '2025-06-12', 'Michelle Ware', 'Replaced parts', 470.66);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (236, 992, '2024-10-04', '2025-10-05', 'Ashley Peterson', 'Routine maintenance', 286.64);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (237, 243, '2025-03-24', '2025-06-28', 'Frank Chan', 'Replaced cable', 366.85);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (238, 800, '2024-07-18', '2025-06-08', 'Michael Kim', 'Cleaned and tested', 487.61);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (239, 807, '2024-05-28', '2025-07-08', 'Michael Mccarthy', 'Calibration performed', 336.23);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (240, 777, '2025-02-21', '2025-08-10', 'Dawn Ritter', 'Replaced cable', 311.7);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (241, 1007, '2025-04-06', '2025-07-23', 'Jeffrey Harmon', 'Replaced parts', 430.64);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (242, 864, '2024-11-23', '2025-08-24', 'Jessica Campbell', 'Cleaned and tested', 270.56);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (243, 712, '2024-08-04', '2025-06-24', 'Angelica Ward', 'Replaced parts', 461.46);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (244, 205, '2024-06-19', '2025-07-18', 'Brandon Farley', 'Calibration performed', 493.78);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (245, 1023, '2024-04-27', '2025-07-02', 'Tina Lin', 'Replaced cable', 106.08);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (246, 161, '2024-07-04', '2025-08-14', 'Ashley Yang', 'Routine maintenance', 67.76);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (247, 1082, '2024-09-09', '2025-06-25', 'Richard Wiggins', 'Cleaned and tested', 147.06);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (248, 1115, '2024-08-23', '2025-09-27', 'Angie Ferguson', 'Replaced cable', 259.27);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (249, 370, '2024-08-15', '2025-09-23', 'Carolyn Nelson', 'Replaced cable', 301.65);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (250, 199, '2024-09-26', '2025-06-30', 'Gabriela Jones', 'Routine maintenance', 337.55);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (251, 484, '2024-11-09', '2025-08-23', 'Carolyn Singleton', 'Routine maintenance', 196.02);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (252, 468, '2024-11-04', '2025-06-05', 'Margaret Moore', 'Cleaned and tested', 167.11);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (253, 552, '2024-07-11', '2025-10-12', 'Anna Davis', 'Cleaned and tested', 248.65);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (254, 143, '2025-04-09', '2025-07-26', 'Angelica Perez', 'Replaced parts', 144.36);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (255, 1098, '2024-06-08', '2025-08-26', 'Deanna King', 'Replaced parts', 459.29);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (256, 1016, '2024-09-12', '2025-07-14', 'Raymond Phillips', 'Replaced parts', 365.67);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (257, 901, '2024-09-27', '2025-09-12', 'Matthew Brock', 'Calibration performed', 191.03);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (258, 424, '2024-06-19', '2025-06-29', 'John Vega', 'Replaced parts', 482.61);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (259, 935, '2025-01-03', '2025-06-25', 'Dr. Alexander Macdonald', 'Cleaned and tested', 67.33);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (260, 104, '2024-05-16', '2025-06-03', 'Patricia Gilbert', 'Cleaned and tested', 401.19);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (261, 885, '2024-07-23', '2025-07-31', 'Darin Gonzalez', 'Replaced parts', 110.36);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (262, 1199, '2025-03-06', '2025-07-10', 'Steven Austin', 'Replaced cable', 214.64);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (263, 348, '2024-07-17', '2025-06-10', 'Emily Dorsey', 'Calibration performed', 356.66);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (264, 524, '2024-05-27', '2025-07-19', 'Alexander Huynh', 'Replaced parts', 251.91);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (265, 860, '2024-05-15', '2025-07-18', 'Michael Herrera', 'Replaced parts', 333.71);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (266, 1045, '2024-06-21', '2025-09-30', 'Christian Ingram', 'Routine maintenance', 291.76);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (267, 169, '2025-03-28', '2025-06-14', 'Kelly Cooper', 'Calibration performed', 82.68);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (268, 515, '2024-08-15', '2025-09-25', 'Edwin Hardin', 'Replaced parts', 162.7);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (269, 27, '2024-07-22', '2025-08-05', 'Lisa Snyder', 'Calibration performed', 392.5);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (270, 749, '2025-01-12', '2025-05-26', 'Brandon Stewart', 'Replaced parts', 183.78);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (271, 392, '2024-07-04', '2025-07-15', 'Sarah Coffey', 'Cleaned and tested', 57.33);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (272, 457, '2024-09-11', '2025-07-19', 'Diamond Villegas', 'Routine maintenance', 473.23);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (273, 683, '2025-03-29', '2025-10-16', 'Duane Roth', 'Replaced parts', 482.71);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (274, 277, '2024-12-02', '2025-09-09', 'Austin Watson', 'Routine maintenance', 74.75);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (275, 1015, '2024-05-30', '2025-06-13', 'Melissa Wade', 'Replaced parts', 145.98);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (276, 954, '2024-12-24', '2025-08-12', 'Daniel Dorsey', 'Routine maintenance', 79.09);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (277, 229, '2025-03-20', '2025-09-22', 'Timothy Owen', 'Cleaned and tested', 266.44);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (278, 455, '2024-04-29', '2025-10-18', 'Laurie Simmons', 'Cleaned and tested', 152.63);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (279, 364, '2024-11-07', '2025-07-28', 'Julie Anderson', 'Replaced parts', 299.13);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (280, 748, '2025-02-07', '2025-10-10', 'Shawn Jones PhD', 'Replaced parts', 477.28);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (281, 324, '2024-07-22', '2025-08-19', 'Melissa Brown', 'Calibration performed', 154.04);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (282, 849, '2024-09-18', '2025-06-06', 'Ashley Harris', 'Replaced parts', 345.58);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (283, 126, '2024-08-22', '2025-09-23', 'Denise Rivers', 'Calibration performed', 78.41);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (284, 1144, '2024-10-19', '2025-08-24', 'Mary Cooper', 'Cleaned and tested', 178.17);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (285, 897, '2024-10-26', '2025-07-14', 'Tammie Weeks', 'Cleaned and tested', 190.31);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (286, 861, '2024-12-21', '2025-07-25', 'David Russell', 'Cleaned and tested', 115.6);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (287, 862, '2024-07-27', '2025-09-21', 'John Mcdaniel', 'Routine maintenance', 249.65);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (288, 801, '2024-05-31', '2025-09-01', 'Hannah Torres', 'Replaced cable', 457.57);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (289, 229, '2024-11-06', '2025-10-18', 'Carrie Patel', 'Routine maintenance', 353.45);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (290, 950, '2024-08-17', '2025-06-30', 'Sandra Tran', 'Calibration performed', 441.65);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (291, 220, '2025-01-09', '2025-09-26', 'Brittany Luna', 'Routine maintenance', 79.47);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (292, 1089, '2024-08-03', '2025-09-10', 'Lauren Gould', 'Cleaned and tested', 480.25);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (293, 638, '2025-01-06', '2025-07-12', 'Jodi Osborn', 'Routine maintenance', 292.67);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (294, 539, '2024-05-10', '2025-07-10', 'Steven Waters', 'Calibration performed', 122.0);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (295, 1046, '2024-08-28', '2025-07-12', 'John Baker', 'Replaced parts', 320.51);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (296, 561, '2024-09-03', '2025-08-18', 'Christopher Brown', 'Replaced parts', 455.2);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (297, 1145, '2024-09-21', '2025-07-23', 'Kiara Collins', 'Calibration performed', 89.19);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (298, 866, '2024-05-09', '2025-08-26', 'Sandra Davis', 'Cleaned and tested', 90.15);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (299, 174, '2024-07-05', '2025-09-13', 'Jessica Rivera', 'Replaced parts', 285.61);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (300, 750, '2024-06-30', '2025-06-18', 'George Adams', 'Routine maintenance', 301.02);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (301, 1187, '2024-08-01', '2025-10-05', 'Mr. Logan Johnson', 'Routine maintenance', 252.37);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (302, 962, '2024-06-24', '2025-10-16', 'Mark Fuller', 'Replaced cable', 209.57);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (303, 614, '2025-01-03', '2025-10-07', 'Tracey Adams', 'Replaced parts', 57.38);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (304, 1009, '2025-03-21', '2025-08-07', 'Daniel Faulkner', 'Calibration performed', 457.72);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (305, 1193, '2024-09-08', '2025-06-01', 'Jennifer Martinez', 'Cleaned and tested', 421.43);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (306, 668, '2024-11-24', '2025-09-26', 'Yolanda Jones', 'Replaced cable', 498.05);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (307, 1002, '2024-08-10', '2025-10-04', 'Tanya Adams', 'Replaced parts', 387.95);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (308, 1166, '2025-04-01', '2025-10-13', 'Aaron Wood', 'Replaced cable', 485.67);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (309, 657, '2024-08-04', '2025-06-24', 'George Hawkins MD', 'Replaced cable', 100.98);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (310, 1028, '2025-02-23', '2025-07-21', 'Logan Evans', 'Replaced parts', 476.12);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (311, 1123, '2024-05-25', '2025-08-11', 'Teresa Clark', 'Calibration performed', 231.5);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (312, 805, '2024-10-01', '2025-08-08', 'Daniel Saunders', 'Replaced parts', 401.77);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (313, 1098, '2024-08-30', '2025-10-06', 'Jacob Hurley', 'Cleaned and tested', 404.33);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (314, 224, '2024-08-04', '2025-07-28', 'Susan Williams', 'Routine maintenance', 376.88);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (315, 824, '2024-08-24', '2025-10-12', 'Regina Carlson', 'Routine maintenance', 254.32);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (316, 494, '2024-05-09', '2025-07-08', 'John Bender', 'Calibration performed', 468.37);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (317, 143, '2025-01-14', '2025-07-07', 'Paul Thompson', 'Calibration performed', 126.28);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (318, 1096, '2024-06-27', '2025-09-17', 'Stephanie Ortiz', 'Routine maintenance', 53.35);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (319, 89, '2024-04-25', '2025-07-24', 'Albert Miller', 'Replaced parts', 71.45);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (320, 252, '2024-09-08', '2025-08-10', 'Christopher Tucker', 'Routine maintenance', 318.22);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (321, 973, '2024-11-23', '2025-08-31', 'Kevin Miller', 'Cleaned and tested', 183.53);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (322, 78, '2024-08-20', '2025-08-29', 'Timothy Chavez', 'Replaced parts', 97.6);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (323, 1053, '2024-05-21', '2025-08-26', 'John Molina', 'Calibration performed', 150.3);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (324, 363, '2024-10-23', '2025-07-14', 'Jennifer Houston', 'Replaced parts', 331.38);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (325, 231, '2025-03-12', '2025-07-11', 'Mrs. Sarah James', 'Routine maintenance', 108.69);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (326, 1114, '2024-08-28', '2025-06-17', 'Connie Garcia', 'Cleaned and tested', 180.21);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (327, 518, '2024-09-25', '2025-06-25', 'Michael Brennan', 'Routine maintenance', 369.21);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (328, 1194, '2024-05-12', '2025-10-16', 'Sue Mcdonald', 'Replaced cable', 392.4);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (329, 914, '2024-12-09', '2025-09-03', 'Cristian Kirk', 'Replaced parts', 348.62);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (330, 574, '2025-01-14', '2025-08-24', 'Joshua Keller', 'Replaced parts', 294.52);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (331, 314, '2025-02-14', '2025-06-14', 'Robert Smith', 'Cleaned and tested', 317.74);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (332, 455, '2024-10-31', '2025-06-09', 'David Rowe', 'Replaced cable', 275.46);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (333, 675, '2024-04-28', '2025-10-06', 'Thomas Collins', 'Cleaned and tested', 354.0);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (334, 52, '2024-12-31', '2025-06-26', 'Brenda Thompson', 'Routine maintenance', 85.78);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (335, 697, '2024-08-06', '2025-08-14', 'Isabel Lee', 'Cleaned and tested', 260.38);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (336, 569, '2024-07-21', '2025-10-09', 'Michael Mayer', 'Replaced parts', 299.83);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (337, 65, '2025-02-08', '2025-07-03', 'Christopher Munoz', 'Replaced cable', 345.98);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (338, 161, '2025-02-07', '2025-08-13', 'Mr. Bradley Ibarra', 'Replaced cable', 96.89);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (339, 407, '2024-11-13', '2025-06-29', 'Brent Griffith', 'Replaced parts', 247.17);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (340, 241, '2025-02-06', '2025-10-13', 'Nicholas Russell', 'Calibration performed', 469.2);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (341, 555, '2024-09-05', '2025-08-13', 'Angela Lawson', 'Routine maintenance', 211.88);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (342, 819, '2025-04-17', '2025-08-30', 'Jennifer Howe', 'Replaced parts', 145.25);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (343, 981, '2024-08-30', '2025-08-27', 'Kelly Bean', 'Cleaned and tested', 280.47);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (344, 18, '2024-12-06', '2025-07-16', 'Calvin Allen', 'Calibration performed', 184.32);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (345, 1140, '2025-03-22', '2025-06-16', 'James George', 'Replaced cable', 114.76);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (346, 159, '2024-08-13', '2025-09-22', 'Daniel Rodriguez', 'Routine maintenance', 416.14);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (347, 1001, '2025-04-13', '2025-06-21', 'Nicholas Barnett', 'Routine maintenance', 409.46);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (348, 1008, '2024-09-16', '2025-09-25', 'Jonathan Hall', 'Replaced cable', 458.29);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (349, 358, '2024-11-13', '2025-09-30', 'Kathryn Moore', 'Replaced cable', 479.23);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (350, 756, '2025-03-29', '2025-05-25', 'Elizabeth Patel', 'Routine maintenance', 274.71);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (351, 649, '2025-02-23', '2025-06-05', 'Aimee Francis', 'Replaced cable', 84.93);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (352, 30, '2025-01-12', '2025-09-16', 'Tracy Mendez', 'Cleaned and tested', 437.5);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (353, 1181, '2025-04-23', '2025-08-20', 'Daniel Thompson', 'Calibration performed', 196.06);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (354, 828, '2024-06-22', '2025-09-23', 'William Carlson', 'Calibration performed', 435.2);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (355, 836, '2024-12-12', '2025-07-19', 'Stephen Leblanc', 'Calibration performed', 233.89);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (356, 308, '2025-03-04', '2025-09-24', 'Brad Floyd', 'Replaced cable', 56.6);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (357, 787, '2024-07-10', '2025-05-31', 'Patrick Lewis', 'Replaced parts', 264.52);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (358, 476, '2024-06-23', '2025-07-07', 'Stacey Norris DDS', 'Replaced cable', 245.51);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (359, 501, '2024-12-01', '2025-10-17', 'Stephen Reyes', 'Replaced parts', 483.13);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (360, 584, '2024-06-27', '2025-06-28', 'Jonathan Mendez', 'Routine maintenance', 264.61);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (361, 1073, '2024-11-29', '2025-10-21', 'William Allen', 'Replaced parts', 271.79);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (362, 936, '2024-12-13', '2025-08-11', 'Andrew Rodriguez', 'Cleaned and tested', 199.2);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (363, 559, '2024-09-11', '2025-06-24', 'Charles Jackson', 'Calibration performed', 275.02);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (364, 635, '2025-03-10', '2025-09-20', 'Elizabeth Holmes', 'Routine maintenance', 202.05);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (365, 1142, '2024-12-14', '2025-07-09', 'Gabriella Murphy', 'Cleaned and tested', 251.48);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (366, 1077, '2024-08-17', '2025-06-27', 'Cody Mooney', 'Replaced parts', 443.53);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (367, 627, '2025-01-15', '2025-06-01', 'Angela Everett', 'Calibration performed', 335.75);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (368, 298, '2025-04-22', '2025-08-18', 'Mary Fuller', 'Routine maintenance', 464.38);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (369, 139, '2024-06-05', '2025-07-02', 'Kristin Petersen', 'Replaced parts', 362.56);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (370, 63, '2024-06-26', '2025-07-07', 'Alexa Brandt', 'Replaced parts', 271.67);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (371, 628, '2024-09-20', '2025-06-04', 'Sandra Jenkins', 'Calibration performed', 68.47);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (372, 434, '2024-11-29', '2025-10-11', 'Stacey Bishop', 'Routine maintenance', 106.49);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (373, 1083, '2024-07-04', '2025-06-23', 'Maria Lynch', 'Replaced cable', 145.57);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (374, 22, '2024-10-20', '2025-07-05', 'James Moore', 'Cleaned and tested', 53.98);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (375, 590, '2024-11-15', '2025-10-16', 'Julian Saunders', 'Routine maintenance', 496.31);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (376, 85, '2024-12-20', '2025-07-17', 'Phillip Lopez', 'Calibration performed', 85.37);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (377, 921, '2025-02-02', '2025-06-13', 'Michelle Young', 'Replaced cable', 340.78);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (378, 707, '2024-10-16', '2025-08-07', 'Jason Carney', 'Replaced parts', 319.26);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (379, 491, '2024-07-21', '2025-10-14', 'Felicia Vasquez', 'Replaced parts', 280.35);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (380, 614, '2024-12-12', '2025-09-04', 'Brandi Griffin', 'Calibration performed', 438.25);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (381, 956, '2024-05-03', '2025-07-20', 'Crystal Santos', 'Replaced cable', 266.89);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (382, 333, '2024-04-30', '2025-05-25', 'Bridget Lawrence', 'Calibration performed', 431.65);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (383, 386, '2024-08-22', '2025-09-30', 'Kristen Williams', 'Replaced parts', 391.71);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (384, 747, '2025-04-05', '2025-07-10', 'Travis Hughes', 'Replaced cable', 67.88);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (385, 740, '2025-03-29', '2025-06-24', 'Noah Sawyer', 'Replaced cable', 437.64);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (386, 916, '2024-08-09', '2025-10-03', 'Suzanne Porter', 'Routine maintenance', 454.27);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (387, 966, '2024-05-23', '2025-08-15', 'Thomas Gonzalez', 'Cleaned and tested', 256.65);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (388, 426, '2025-03-30', '2025-10-02', 'Philip Deleon', 'Routine maintenance', 411.82);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (389, 616, '2024-12-28', '2025-08-18', 'Charles Romero', 'Calibration performed', 498.5);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (390, 1094, '2024-05-31', '2025-08-06', 'Rodney Collins', 'Replaced cable', 117.81);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (391, 972, '2024-12-20', '2025-07-14', 'Debbie Rios', 'Cleaned and tested', 485.35);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (392, 156, '2024-06-19', '2025-08-10', 'Christopher Thompson', 'Cleaned and tested', 398.9);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (393, 839, '2024-12-24', '2025-08-30', 'Randy Goodman', 'Replaced cable', 463.76);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (394, 835, '2025-03-08', '2025-08-11', 'Daniel Gutierrez', 'Calibration performed', 121.21);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (395, 901, '2025-04-11', '2025-09-14', 'Richard Wright', 'Replaced cable', 121.05);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (396, 308, '2024-11-19', '2025-09-03', 'Michael Luna', 'Replaced parts', 239.69);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (397, 475, '2024-12-19', '2025-08-30', 'James Wood', 'Replaced parts', 449.02);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (398, 673, '2024-05-31', '2025-10-09', 'William Salinas', 'Routine maintenance', 486.81);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (399, 1200, '2024-07-27', '2025-08-16', 'Kimberly Yoder', 'Calibration performed', 452.57);
+        
+            INSERT INTO Maintenance (maintenance_id, equipment_id, service_date, nextService_date, technician_name, description, cost)
+            VALUES (400, 975, '2024-07-24', '2025-10-07', 'Timothy Castro', 'Replaced cable', 309.49);
+        

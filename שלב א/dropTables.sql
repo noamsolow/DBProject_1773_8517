@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS Equipment_Supplier;
+DROP TABLE IF EXISTS FlexibilityEquipment;
+DROP TABLE IF EXISTS StrengthEquipment;
+DROP TABLE IF EXISTS CardioEquipment;
+DROP TABLE IF EXISTS Maintenance;
+DROP TABLE IF EXISTS Equipment;
+DROP TABLE IF EXISTS Supplier;
