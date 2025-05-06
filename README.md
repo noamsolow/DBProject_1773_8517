@@ -117,10 +117,13 @@
 ## גיבוי ושחזור
 
 ### גיבוי
-ביצענו גיבוי של בסיס הנתונים באמצעות הכלי `pg_dump` בתוך קונטיינר Docker. קובץ הגיבוי נשמר ב-`C:/Users/noams/OneDrive/Desktop/databases/backup/backup_2025-04-24.sql`.
+ביצענו גיבוי של בסיס הנתונים 
+![image](https://github.com/user-attachments/assets/d6bcf9fe-81fa-459d-9db8-663ebafd5e29)
+
 
 ### שחזור
-כדי לשחזר את בסיס הנתונים, השתמשנו בפקודה `pg_restore`:
+כדי לשחזר את בסיס הנתונים, השתמשנו בגיבוי:
+![image](https://github.com/user-attachments/assets/5e42c087-1353-4954-ab72-45903741854d)
 
 ```bash
 pg_restore -U nsolow -d mydatabase "C:/Users/noams/OneDrive/Desktop/databases/backup/backup_2025-04-24.sql"
