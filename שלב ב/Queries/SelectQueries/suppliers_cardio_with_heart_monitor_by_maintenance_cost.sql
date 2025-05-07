@@ -1,7 +1,9 @@
 -- Query to find suppliers who provide cardio equipment with heart monitors, ordered by maintenance cost
 SELECT 
-    s.name AS supplier_name,    -- Supplier name
-    e.name AS equipment_name,   -- Equipment name
+    s.name AS supplier_name,        -- Supplier name
+    s.contact_number AS supplier_phone, -- Supplier phone number
+    s.email AS supplier_email,      -- Supplier email
+    e.name AS equipment_name,       -- Equipment name
     SUM(m.cost) AS total_maintenance_cost  -- Total maintenance cost for each equipment
 FROM 
     Supplier s
