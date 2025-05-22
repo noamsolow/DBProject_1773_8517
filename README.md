@@ -1,340 +1,365 @@
-
-# דוח פרויקט - שלב ב
+# דוח פרויקט - שלב ג'
 
 ## תוכן עניינים
-1. [מבוא ומטרת הפרויקט](#מבוא-ומטרת-הפרויקט)
-2. [חברי צוות](#חברי-צוות)
-3. [שאילתות SELECT](#שאילתות-select)
-4. [שאילתות DELETE](#שאילתות-delete)
-5. [שאילתות UPDATE](#שאילתות-update)
-6. [אילוצים (Constraints)](#אילוצים)
-7. [Rollback ו-Commit](#rollback-ו-commit)
-8. [קבצים שהועלו לגיט](#קבצים-שהועלו-לגיט)
 
-## מבוא ומטרת הפרויקט
-שלב ב בפרויקט מתמקד בהשלמת תהליך העבודה על מסד הנתונים, ביצוע עדכונים וכתיבת שאילתות SQL מתקדמות. מטרות השלב הן:
-* יישום שאילתות SELECT מורכבות לניתוח נתוני ציוד כושר
-* ביצוע שאילתות עדכון ומחיקה לתחזוקת מסד הנתונים
-* הוספת אילוצים (constraints) להבטחת שלמות המידע
-* יישום טרנזקציות באמצעות Rollback ו-Commit
+1. [תרשימי ERD ו-DSD](#תרשימי-erd-ו-dsd)
+2. [החלטות בשלב האינטגרציה](#החלטות-בשלב-האינטגרציה)
+3. [פקודות SQL עיקריות (Integrate.sql)](#פקודות-sql-עיקריות-integratesql)
+4. [מבטי View ושאילתות לדוגמה (Views.sql)](#מבטי-view-ושאילתות-לדוגמה-viewssql)
+5. [קבצים שהועלו לגיט](#קבצים)
 
-כל שאילתא כוללת הסבר בעברית, תיעוד תוצאותיה, וצילומי מסך מתאימים.
+## תרשימי ERD ו-DSD
 
-## חברי צוות
-- נועם סולו (214928517)
-- אליעזר רוזנבלט (212311773)
+הנה הגרסה ללא אימוג'ים, בפורמט מסודר כמו שצריך לדוח או README:
 
-## שאילתות SELECT
+---
 
-### שאילתא 1
-**ספקים ותיקוני תחזוקה לציוד כוח**
+## Equipment
 
-**תיאור השאילתא**: מציגה את שמות הספקים ומספר תיקוני התחזוקה עבור ציוד כוח שסופק על ידם. השאילתא כוללת רק ציוד עם אפשרות התאמה ומשקל מקסימלי מעל 120 ק"ג.
+### ERD – תרשים ישויות קשרים
 
-**תוצאת השאילתא לדוגמה**:
-![image](https://github.com/user-attachments/assets/19609ff5-a715-4cd5-947e-9d885d6193ac)
+![equipment](https://github.com/user-attachments/assets/8d4eb224-fa35-4f62-8155-6cb5bc549d8b)
 
-**הסבר**: השאילתא מחזירה רשימה של ספקים ומספר תיקוני התחזוקה עבור ציוד הכוח שסיפקו. התוצאות ממיינות את הספקים לפי מספר תיקוני התחזוקה בסדר עולה.
+### DSD – תרשים מבנה נתונים
 
-### שאילתא 2
-**עלויות תחזוקה לפי קטגוריות ציוד**
+![equipment_schema](https://github.com/user-attachments/assets/c4edd8f8-b723-4f3c-a102-bd37bb868519)
 
-**תיאור השאילתא**: מציגה את סך עלות התחזוקה וממוצע עלות התחזוקה עבור כל אחת מהקטגוריות: Cardio, Strength, ו-Flexibility. כל קטגוריה מחושבת בנפרד.
+---
 
-**תוצאת השאילתא לדוגמה**:
-![image](https://github.com/user-attachments/assets/d9ff101b-2d28-43fe-b363-ba639b5c8ee2)
+## Gym People
 
-**הסבר**: השאילתא מחזירה את סך עלות התחזוקה וממוצע עלות התחזוקה עבור כל קטגוריה של ציוד. התוצאות ממוינות לפי סך עלות התחזוקה בסדר יורד.
+### ERD – תרשים ישויות קשרים
 
-### שאילתא 3
-**ממוצע כמות ציוד גמישות לפי סוג חומר**
+![gym_people](https://github.com/user-attachments/assets/7172bc58-1b38-4442-8c40-6be7f1e0669f)
 
-**תיאור השאילתא**: מחשבת את הממוצע של כמות הציוד מסוג Flexibility Equipment שנרכש יחד לפי סוג החומר של הציוד.
+### DSD – תרשים מבנה נתונים
 
-**תוצאת השאילתא לדוגמה**:
-![image](https://github.com/user-attachments/assets/875acece-328a-4895-8058-ef12288e7449)
+![gym_people_schema](https://github.com/user-attachments/assets/e8ebac78-9ee1-48fc-a534-830e552f484f)
 
-**הסבר**: השאילתא מחזירה את ממוצע הכמות שנרכשה עבור כל סוג חומר של ציוד Flexibility Equipment. התוצאות ממוינות לפי ממוצע הכמות שנרכשה בסדר יורד.
+---
 
-### שאילתא 4
-**ציוד הדורש תחזוקה בחודש הקרוב**
+## Combined
 
-**תיאור השאילתא**: מציגה את הציוד שצריך תחזוקה במהלך 30 הימים הקרובים, כולל מזהה הציוד, שם הציוד, תאריך התחזוקה ומחיר התחזוקה הצפוי.
+### ERD – תרשים ישויות קשרים משולב
 
-**תוצאת השאילתא לדוגמה**:
-![image](https://github.com/user-attachments/assets/9c5eb454-d7f3-4cac-abef-53494b199b37)
+![combined_erd](https://github.com/user-attachments/assets/1028a409-c426-4eb6-9aa6-edd6d78096b0)
 
-**הסבר**: השאילתא מחזירה רשימה של ציוד שצריך תחזוקה בטווח של 30 הימים הקרובים. התוצאות ממוינות לפי תאריך התחזוקה הקרוב ביותר.
+### DSD – תרשים מבנה נתונים משולב
 
-### שאילתא 5
-**ציוד שנרכש בשנת 2023 לפי מותג וספק**
+![combined_schema](https://github.com/user-attachments/assets/1bb28a70-28e6-4e93-8ae6-7c6fc17d9edf)
 
-**תיאור השאילתא**: מוצאת את הציוד שנרכש בשנת 2023 ומסווגת אותו לפי מותג וספק. מציגה את שם הציוד, המותג וסך מספר הציוד שנרכש.
+---
 
-**תוצאת השאילתא לדוגמה**:
-![image](https://github.com/user-attachments/assets/b4bd0a69-5c17-46d2-80dc-f91da787fc45)
 
-**הסבר**: השאילתא מחזירה רשימה של ציוד שנרכש בשנת 2023, ממוינת לפי מותג ושם הציוד, כולל סך מספר הציוד שנרכש.
 
-### שאילתא 6
-**ספקי ציוד Cardio עם מדדי דופק**
+## החלטות בשלב האינטגרציה
+---
+ **איחוד הגורמים האנושיים**
+   כל היישויות Freelancer, Supplier ו־Worker אוחדו כישויות ילד של הטבלה המרכזית person, תוך שמירה על תתי-טבלאות נפרדות (Freelancer, Supplier) כהרחבות (subtypes) מבוססות pId.
 
-**תיאור השאילתא**: מציגה את הספקים שמספקים ציוד Cardio עם מדדי דופק, ומספקת את המידע אודותיהם, כולל שם הספק, מספר טלפון, דוא"ל, שם הציוד וסך עלות תחזוקת הציוד.
 
-**תוצאת השאילתא לדוגמה**:
-![image](https://github.com/user-attachments/assets/dd2f7ab6-2475-4d49-b13e-a3e2144ae939)
+ **יצירת טבלת על חוזים (Contract\_job)**
+   הוקמה טבלה חדשה בשם Contract_job שמאגדת לתוכה את כלל החוזים: גם שירותים (serves) וגם תחזוקות (maintenance). טבלה זו מהווה את הליבה של כל פעולת שירות במערכת המאוחדת.
 
-**הסבר**: השאילתא מחזירה רשימה של ספקים שמספקים ציוד Cardio עם מדדי דופק, עם המידע אודותיהם. התוצאות ממוינות לפי סך עלות התחזוקה בסדר עולה.
 
-### שאילתא 7
-**ספקים ומספר הציוד שסיפקו לפי קטגוריות**
+**מניעת התנגשות מזהים**
+   מאחר והטבלה Supplier כללה מזהים שעלולים להתנגש עם מזהי person, בוצע עדכון של כל supplier_id במסד הנתונים – והם הוגדלו ב־1000.
 
-**תיאור השאילתא**: מציגה את הספקים ואת מספר הציוד שהם מספקים, כולל פירוט על סוגי הציוד השונים (Cardio, Strength, Flexibility).
 
-**תוצאת השאילתא לדוגמה**:
-![image](https://github.com/user-attachments/assets/83f9edb8-60ad-45f9-968a-358586d9e7bd)
+**הקמה ושינוי של תתי-טבלאות**
+   טבלאות המשנה Freelancer ו־Supplier הוגדרו מחדש כך שכל אחת מהן מקבלת את pId שלה מ־person, בהתאם לעיקרון היררכיה טיפוסית.
 
-**הסבר**: השאילתא מחזירה רשימה של ספקים עם מספר הציוד שהם סיפקו, ממוינת לפי סך הציוד הכולל. התוצאות כוללות גם את מספר הציוד עבור כל קטגוריה.
 
-### שאילתא 8
-**תאריכים עם עלויות תחזוקה גבוהות**
+**הגדרת טבלת Maintenance חדשה**
+   הטבלה Maintenance החדשה קושרת בין ציוד (equipment) לבין חוזה (Contract_job) ומייצגת קשר 1:1 לתחזוקה בפועל, תוך שמירה על נורמליזציה.
 
-**תיאור השאילתא**: מציגה את 50 התאריכים שבהם בוצעו הכי הרבה תיקוני תחזוקה, וממיינת את התוצאות לפי סך עלות התחזוקה הכוללת בכל תאריך.
 
-**תוצאת השאילתא לדוגמה**:
-![image](https://github.com/user-attachments/assets/904078d5-b851-44e8-83ce-f3c31bb959f8)
+**העברת נתונים מלאה**
+   בוצעה מיגרציה מסודרת של כל הנתונים מהטבלאות הישנות: maintenance_old, freelancer, serves_backup לתוך המבנה החדש. הנתונים שומרו בסדר ובקשר נכון, כולל התאמה בין מזהים.
 
-**הסבר**: השאילתא מחזירה את 50 התאריכים שבהם בוצעו הכי הרבה תיקוני תחזוקה, ממוינים לפי סך עלות התחזוקה, כך שהתאריכים עם העלות הגבוהה ביותר יופיעו בראש הרשימה.
 
-## שאילתות DELETE
+**ניקוי טבלאות ישנות**
+   לאחר קליטת המידע, בוצע ניקוי מלא (DROP) של טבלאות ישנות ומיותרות – כולל freelancer, maintenance_old ו־serves.
 
-### מחיקת ציוד Bowflex
-**תיאור השאילתא**: מבוצעת כדי למחוק את כל הרשומות שקשורות לציוד ממותג Bowflex מתוך מספר טבלאות בבסיס הנתונים. התהליך מבצע מחיקה מטבלאות תחזוקה, ספקי ציוד, סוגי ציוד שונים ולבסוף מטבלת הציוד עצמה.
+**עדכון טבלת השירותים (services)**
+   הערך 'supplier' הוסר מטבלת השירותים, מאחר שספקים אינם מספקים שירות ישיר אלא מהווים ישות אנושית (person) ואינם מייצגים קטגוריית שירות לגיטימית. במקביל, נוסף שירות חדש 'maintenance' לטבלת services, כדי לאפשר תיעוד תחזוקות כחלק מהשירותים הניתנים במערכת המאוחדת.
+   
 
-**מצב לפני המחיקה**:
+## פקודות SQL עיקריות (Integrate.sql)
 
-![Screenshot 2025-05-06 223557](https://github.com/user-attachments/assets/e29246f4-0285-4c60-93b1-8ccf66129fca)
-![Screenshot 2025-05-06 225317](https://github.com/user-attachments/assets/b2660479-fc01-4776-a9c1-e6db181d1103)
+* **עדכון מזהים לספקים למניעת התנגשויות עם מזהי `person`:**
 
-
-**מצב אחרי המחיקה**:
-
-![image](https://github.com/user-attachments/assets/418b012b-b84e-4706-a9d3-ba8eefa346e2)
-
-**הסבר**: השאילתא מבצעת סדרת מחיקות בצורה מדורגת כדי לשמור על שלמות מסד הנתונים ולמנוע שגיאות הפרת אילוצי מפתח זר.
-
-### מחיקת ספקים לא פעילים
-**תיאור השאילתא**: מוחקת ספקים שלא ביצעו אספקות ציוד ב-5 השנים האחרונות, על מנת לשמור על מאגר ספקים פעילים ורלוונטיים.
-
-**מצב לפני המחיקה**:
-
-![Screenshot 2025-05-06 225951](https://github.com/user-attachments/assets/b4e08b9b-adc4-41d9-92ef-30da5ca1ee4f)
-![Screenshot 2025-05-06 230006](https://github.com/user-attachments/assets/449ec37b-52fc-4edb-b77d-1f94507cbaf9)
-
-
-**מצב אחרי המחיקה**:
-
-![Screenshot 2025-05-06 230021](https://github.com/user-attachments/assets/a6518d8b-ebac-4e23-a778-8e66b2c3dfb4)
-
-**הסבר**: השאילתא משתמשת בתנאי NOT EXISTS כדי לזהות ספקים שלא סיפקו ציוד בחמש השנים האחרונות ולהסיר אותם ממסד הנתונים.
-
-### מחיקת ספקים ללא אספקות
-**תיאור השאילתא**: מסירה מהמערכת ספקים שמעולם לא סיפקו ציוד, על ידי בדיקת קיום רשומות מתאימות בטבלת equipment_supplier.
-
-**מצב לפני המחיקה**:
-
-![Screenshot 2025-05-06 222218](https://github.com/user-attachments/assets/65f05c1f-c7ea-49db-b0e8-7968c44ff3ec)
-![Screenshot 2025-05-06 222905](https://github.com/user-attachments/assets/0990ba69-fb99-4764-b71b-dc9e452d9b84)
-
-
-**מצב אחרי המחיקה**:
-
-![Screenshot 2025-05-06 223121](https://github.com/user-attachments/assets/b658eab8-6e51-4655-86d8-1ba3470998b6)
-
-
-**הסבר**: השאילתא מחפשת ספקים בטבלה supplier שאין להם אספקות ציוד בטבלה equipment_supplier ומוחקת אותם מהמערכת.
-
-
-
-## שאילתות UPDATE
-
-### עדכון מהירות מקסימלית
-**תיאור השאילתא**: מעלה את המהירות המקסימלית (max_speed) ב-10% עבור כל ציוד Cardio של המותג Technogym.
-
-**מצב לפני העדכון**:
-
-![Screenshot 2025-05-06 231324](https://github.com/user-attachments/assets/57a46d86-fd84-4759-bbd2-0486c1341c3f)
-![Screenshot 2025-05-06 231352](https://github.com/user-attachments/assets/26c9ae41-6416-4e50-8f27-b00e327562e1)
-
-
-**מצב אחרי העדכון**:
-
-![Screenshot 2025-05-06 231406](https://github.com/user-attachments/assets/34b7c239-c2ec-42c8-80d5-6445129466ca)
-
-
-**הסבר**: השאילתא מבצעת עדכון של עמודת max_speed לכל הציוד מסוג Cardio ממותג Technogym, מגדילה את הערך ב-10%.
-
-### עדכון עלויות תחזוקה
-**תיאור השאילתא**: מעלה את עלויות התחזוקה ב-10% לכל הציוד שסופק על ידי הספק PremiumSupplier.
-
-**מצב לפני העדכון**:
-
-![Screenshot 2025-05-06 230923](https://github.com/user-attachments/assets/e143d3ac-5345-46e6-bc77-819e2f39a8d8)
-![Screenshot 2025-05-06 230951](https://github.com/user-attachments/assets/71666664-20a8-46b5-b54d-a12b778f25e8)
-
-
-**מצב אחרי העדכון**:
-
-![Screenshot 2025-05-06 231000](https://github.com/user-attachments/assets/de21a1cc-beb8-4a04-9507-a83bb7893fef)
-
-
-**הסבר**: השאילתא מבצעת עדכון של עלויות התחזוקה עבור כל ציוד שסופק על ידי ספק ספציפי, תוך שימוש בחיבור בין מספר טבלאות לאיתור הציוד הרלוונטי.
-
-### עדכון תוקף אחריות
-**תיאור השאילתא**: מקדימה את תאריך פקיעת האחריות בחודש אחד לכל ציוד Strength מתוצרת True Fitness.
-
-**מצב לפני העדכון**:
-
-![Screenshot 2025-05-06 231922](https://github.com/user-attachments/assets/f34b3ea1-ea01-442c-b238-b629478e6080)
-![Screenshot 2025-05-06 232130](https://github.com/user-attachments/assets/e1f122cd-3957-412d-a3c4-ac94fea9271e)
-
-**מצב אחרי העדכון**:
-
-
-![Screenshot 2025-05-06 232143](https://github.com/user-attachments/assets/6f6b9905-222e-4728-87a8-0eb384443ba7)
-
-
-**הסבר**: השאילתא מעדכנת את תאריך פקיעת האחריות (warranty_expiry) עבור כל ציוד Strength של מותג ספציפי, מאריכה את תקופת האחריות בחודש אחד.
-
-
-
-## אילוצים
-
-### אילוץ NOT NULL
-**תיאור האילוץ**: הוספת אילוץ המחייב שכל ספק חייב לכלול כתובת דוא"ל, כך שלא ניתן להזין ערך NULL בשדה זה.
-
-**שאילתא להוספת האילוץ**:
 ```sql
-ALTER TABLE supplier ALTER COLUMN email SET NOT NULL;
+UPDATE Supplier SET supplier_id = supplier_id + 1000;
+UPDATE equipment_supplier SET supplier_id = supplier_id + 1000;
 ```
 
-**ניסיון הכנסת נתונים המפרים את האילוץ**:
+* **הכנסת ספקים לטבלת `person` עם ערכי ברירת מחדל:**
 
-![Screenshot 2025-05-06 233014](https://github.com/user-attachments/assets/25226dbd-7c11-490c-a23d-16753c09a6b1)
-
-![Screenshot 2025-05-06 233552](https://github.com/user-attachments/assets/59588f01-f87e-4526-8a1e-5dd0eb038cad)
-
-
-
-**הסבר**: האילוץ מבטיח שכל ספק במערכת יכלול כתובת דוא"ל תקינה, דבר שחיוני לתקשורת עם הספקים.
-
-### אילוץ CHECK
-**תיאור האילוץ**: הוספת אילוץ המוודא שעלות תחזוקה תהיה חיובית או אפסית, לא מאפשר הזנת עלויות שליליות.
-
-**שאילתא להוספת האילוץ**:
 ```sql
-ALTER TABLE maintenance ADD CONSTRAINT chk_maintenance_cost_positive CHECK (cost >= 0);
+INSERT INTO person (pId, dateofb, firstname, lastname, email, address, phone)
+SELECT supplier_id, DATE '1900-01-01', 'Supplier', '', email, address,
+       regexp_replace(contact_number, '\\D', '', 'g')::numeric
+FROM Supplier;
 ```
 
-**ניסיון הכנסת נתונים המפרים את האילוץ**:
+* **הגדרת תת-טבלה Supplier כממשיכה של `person`:**
 
-![Screenshot 2025-05-06 233642](https://github.com/user-attachments/assets/dfd0ed76-43b8-4c68-ab33-45ce52c30765)
-
-![Screenshot 2025-05-06 233727](https://github.com/user-attachments/assets/65087b8b-8405-4783-b7fc-fa10dc823050)
-
-
-
-**הסבר**: האילוץ מונע הזנת עלויות תחזוקה שליליות, מה שמבטיח עקביות ותקינות בנתוני העלויות במערכת.
-
-### אילוץ DEFAULT
-**תיאור האילוץ**: הוספת ערך ברירת מחדל לתאריך רכישת ציוד, כך שאם לא יוזן תאריך, המערכת תשתמש בתאריך הנוכחי.
-
-**שאילתא להוספת האילוץ**:
 ```sql
-ALTER TABLE equipment ALTER COLUMN purchase_date SET DEFAULT CURRENT_DATE;
+INSERT INTO Supplier (pId)
+SELECT supplier_id FROM Supplier;
 ```
 
+* **התאמת `equipment_supplier` למבנה החדש:**
 
-**בדיקת פעולת האילוץ**:
-
-![Screenshot 2025-05-06 233802](https://github.com/user-attachments/assets/f8a01bcf-7004-4f8c-9ccb-8a78fda6f1eb)
-
-![Screenshot 2025-05-06 234010](https://github.com/user-attachments/assets/116a4f09-5761-41bf-9c22-74335724495b)
-
-![Screenshot 2025-05-06 234032](https://github.com/user-attachments/assets/a0b8d8aa-29dc-42d6-89db-f51eb6757345)
-
-
-
-**הסבר**: האילוץ מאפשר הוספת ציוד חדש למערכת מבלי להזין תאריך רכישה, והמערכת תשתמש אוטומטית בתאריך הנוכחי.
-
-
-
-## Rollback ו-Commit
-
-### עדכון עם Rollback
-**תיאור הפעולה**: ביצוע עדכון למותג ציוד מ-"Life Fitness" ל-"Life Fitness 4ever" במסגרת טרנזקציה, ולאחר מכן ביטול העדכון באמצעות ROLLBACK.
-
-**שאילתת הטרנזקציה**:
 ```sql
-BEGIN;
-UPDATE Equipment
-SET brand = 'Life Fitness 4ever' 
-WHERE brand = 'Life Fitness';
-ROLLBACK;
+ALTER TABLE equipment_supplier RENAME COLUMN supplier_id TO pId;
+ALTER TABLE equipment_supplier ADD CONSTRAINT fk_equipment_supplier_person FOREIGN KEY (pId) REFERENCES person(pId);
 ```
 
-**מצב לפני הטרנזקציה**:
+* **שימור נתוני התחזוקה הישנים בטבלה זמנית:**
 
-
-![Screenshot 2025-05-07 134539](https://github.com/user-attachments/assets/3d72aec4-28c4-4865-a5b9-2936e82b88a3)
-
-![Screenshot 2025-05-07 134622](https://github.com/user-attachments/assets/1d2b4c3a-694f-4378-9282-9a102edb3121)
-
-![Screenshot 2025-05-07 134646](https://github.com/user-attachments/assets/1dcd7218-c6ea-43ac-807c-70633a71aeef)
-**מצב אחרי ROLLBACK**:
-
-
-![Screenshot 2025-05-07 134658](https://github.com/user-attachments/assets/6f03737f-006e-43de-907f-0f6e01224148)
-
-![Screenshot 2025-05-07 134713](https://github.com/user-attachments/assets/020044ed-6484-445c-b15d-2b37b67cd307)
-
-
-**הסבר**: הדוגמה מדגימה כיצד ניתן לבטל שינויים שבוצעו בטרנזקציה באמצעות פקודת ROLLBACK, מה שמחזיר את מסד הנתונים למצב שהיה בו לפני תחילת הטרנזקציה.
-
-
-
-### עדכון עם Commit
-**תיאור הפעולה**: עיגול ערכי max_weight בטבלת StrengthEquipment במסגרת טרנזקציה, ואישור השינויים באמצעות COMMIT.
-
-**שאילתת הטרנזקציה**:
 ```sql
-BEGIN;
-UPDATE StrengthEquipment
-SET max_weight = ROUND(max_weight);  
-COMMIT;
+ALTER TABLE maintenance RENAME TO maintenance_old;
 ```
 
-**מצב לפני הטרנזקציה**:
+* **יצירת טבלת חוזים מאוחדת `Contract_job`:**
+
+```sql
+CREATE TABLE Contract_job (
+    contract_id SERIAL PRIMARY KEY,
+    pId INT NOT NULL REFERENCES person(pId),
+    service_name VARCHAR(100) NOT NULL REFERENCES services(service_name),
+    cost NUMERIC(10,2),
+    service_date DATE,
+    estimated_next_service DATE,
+    description VARCHAR(255),
+    contract VARCHAR(100)
+);
+```
+
+* **העברת רשומות תחזוקה ישנות לטבלת חוזים חדשה:**
+
+```sql
+INSERT INTO Contract_job (pId, service_name, cost, service_date, estimated_next_service, description)
+SELECT 9999, 'maintenance', cost, service_date, nextService_date, description FROM maintenance_old;
+```
+
+* **יצירת טבלה חדשה לתחזוקה המקשרת בין חוזים לציוד:**
+
+```sql
+CREATE TABLE Maintenance_new (
+    contract_id INT PRIMARY KEY REFERENCES Contract_job(contract_id),
+    equipment_id INT REFERENCES Equipment(equipment_id)
+);
+```
+
+* **חיבור לפי סדר שורות בין ציוד לחוזי תחזוקה:**
+
+```sql
+WITH contract_rows AS (
+    SELECT contract_id, ROW_NUMBER() OVER () AS row_num FROM Contract_job WHERE service_name = 'maintenance'
+),
+equipment_rows AS (
+    SELECT equipment_id, ROW_NUMBER() OVER () AS row_num FROM maintenance_old
+)
+INSERT INTO Maintenance_new (contract_id, equipment_id)
+SELECT c.contract_id, e.equipment_id
+FROM contract_rows c JOIN equipment_rows e ON c.row_num = e.row_num;
+```
+
+* **מחיקת טבלאות ישנות לאחר ההעברה:**
+
+```sql
+DROP TABLE IF EXISTS serves;
+DROP TABLE IF EXISTS maintenance_old;
+```
+
+* **שינוי שם הטבלה החדשה לתחזוקה:**
+
+```sql
+ALTER TABLE Maintenance_new RENAME TO Maintenance;
+```
+
+* **הוספת נתוני שירות ישנים (serves) למודל החדש:**
+
+```sql
+INSERT INTO Contract_job (pId, service_name, cost, service_date, estimated_next_service, description, contract)
+SELECT pId, service_name, price, service_date_begin, service_end_date, 'description', contract FROM serves_backup;
+```
+
+* **החלפת ערך 'supplier' בשירותים אקראיים אמיתיים:**
+
+```sql
+UPDATE Contract_job
+SET service_name = CASE FLOOR(RANDOM() * 4)
+    WHEN 0 THEN 'plumber'
+    WHEN 1 THEN 'painter'
+    WHEN 2 THEN 'electrician'
+    WHEN 3 THEN 'handy man'
+END
+WHERE service_name = 'supplier';
+```
+
+* **מחיקת השירות הלא תקני 'supplier' ממילון השירותים:**
+
+```sql
+DELETE FROM services WHERE service_name = 'supplier';
+```
+
+* **הוספת שירות חדש 'maintenance' במידת הצורך:**
+
+```sql
+INSERT INTO services (service_name, equipmentrequired)
+VALUES ('maintenance', 'Equipment0')
+ON CONFLICT DO NOTHING;
+```
+---
+
+## מבטי View ושאילתות לדוגמה (Views.sql)
 
 
-![Screenshot 2025-05-07 135052](https://github.com/user-attachments/assets/e2097a14-28ee-474c-bae5-f187e6e89e81)
+### מבט 1: `equipment_maintenance_view`
 
-**מצב אחרי COMMIT**:
+**קוד יצירת המבט:**
+
+```sql
+CREATE VIEW equipment_maintenance_view AS
+SELECT 
+    m.contract_id,
+    e.equipment_id,
+    e.name AS equipment_name,
+    cj.service_date,
+    cj.estimated_next_service,
+    cj.cost,
+    cj.description
+FROM Maintenance m
+JOIN Equipment e ON m.equipment_id = e.equipment_id
+JOIN Contract_job cj ON m.contract_id = cj.contract_id
+WHERE cj.service_name = 'maintenance';
+```
+
+**תיאור:**
+מציג מידע על פעולות תחזוקה שבוצעו בציוד, כולל תאריך, עלות, תיאור ושם הציוד.
+
+**שאילתת SELECT \* לדוגמה:**
+
+```sql
+SELECT * FROM equipment_maintenance_view LIMIT 10;
+```
+
+*תמונה לדוגמה:*
+![Screenshot 2025-05-21 230248](https://github.com/user-attachments/assets/22b2a1ed-1e6e-4bb9-ab0a-40ba5d7d5fc6)
+
+**שאילתה 1:** מהם חמשת הציודים שעברו הכי הרבה תחזוקות?
+
+```sql
+SELECT equipment_name, COUNT(*) AS maintenance_count
+FROM equipment_maintenance_view
+GROUP BY equipment_name
+ORDER BY maintenance_count DESC
+LIMIT 5;
+```
+
+**הסבר:**
+מאפשר לזהות ציוד שמקולקל או דורש תחזוקה תכופה.
+
+*תמונה לדוגמה:*
+![Screenshot 2025-05-21 230358](https://github.com/user-attachments/assets/a4d66fb2-79e7-4cfd-b7f5-71e7e35fcc90)
+
+**שאילתה 2:** כמה כסף הוצא על תחזוקה בכל יום?
+
+```sql
+SELECT service_date, SUM(cost) AS total_cost
+FROM equipment_maintenance_view
+GROUP BY service_date
+ORDER BY service_date;
+```
+
+**הסבר:**
+לצורך ניתוח תקציבי של הוצאות תחזוקה לפי תאריכים.
+
+*תמונה לדוגמה:*
+![Screenshot 2025-05-21 230416](https://github.com/user-attachments/assets/94fbd618-6b9c-4a14-a757-eb87b76a897f)
+
+---
+
+### מבט 2: `freelancer_services_view`
+
+**קוד יצירת המבט:**
+
+```sql
+CREATE VIEW freelancer_services_view AS
+SELECT 
+    f.pId,
+    p.firstname || ' ' || p.lastname AS full_name,
+    cj.service_name,
+    cj.service_date,
+    cj.estimated_next_service,
+    cj.cost
+FROM freelancer f
+JOIN person p ON f.pId = p.pId
+JOIN Contract_job cj ON f.pId = cj.pId;
+```
+
+**תיאור:**
+מציג עבור כל פרילנסר את השירותים שביצע, כולל שם מלא, סוג שירות, עלות ותאריכים.
+
+**שאילתת SELECT \* לדוגמה:**
+
+```sql
+SELECT * FROM freelancer_services_view LIMIT 10;
+```
+
+*תמונה לדוגמה:*
+![Screenshot 2025-05-21 230304](https://github.com/user-attachments/assets/43a57117-948e-4432-b4fc-293427538ae8)
+
+**שאילתה 1:** כמה שירותים ביצע כל פרילנסר?
+
+```sql
+SELECT full_name, COUNT(*) AS service_count
+FROM freelancer_services_view
+GROUP BY full_name
+ORDER BY service_count DESC;
+```
+
+**הסבר:**
+ניתוח תפוקת עבודה של פרילנסרים.
+
+*תמונה לדוגמה:*
+![Screenshot 2025-05-21 230430](https://github.com/user-attachments/assets/ccf69309-adc0-420c-86eb-2fcb60f73130)
+
+**שאילתה 2:** מהי העלות הממוצעת לפי סוג שירות?
+
+```sql
+SELECT service_name, AVG(cost) AS avg_cost
+FROM freelancer_services_view
+GROUP BY service_name
+ORDER BY avg_cost DESC;
+```
+
+**הסבר:**
+מטרת השאילתה היא להבין אילו שירותים הם היקרים ביותר.
+
+*תמונה לדוגמה:*
+![Screenshot 2025-05-21 230445](https://github.com/user-attachments/assets/225b1596-3df7-4d85-87eb-1e9a1322a33f)
+
+---
 
 
-![Screenshot 2025-05-07 135115](https://github.com/user-attachments/assets/957e6028-528c-4b44-945d-8bb2430bb180)
+## קבצים
 
-![Screenshot 2025-05-07 135133](https://github.com/user-attachments/assets/a5a7ff23-ef1b-40cb-a7d9-0f419b35a01c)
 
-**הסבר**: הדוגמה מדגימה כיצד ניתן לאשר שינויים שבוצעו בטרנזקציה באמצעות פקודת COMMIT, מה שמקבע את השינויים במסד הנתונים.
+---
 
-## קבצים שהועלו לגיט
-במסגרת שלב ב הועלו הקבצים הבאים לתיקיית "שלב ב" בגיט:
 
-1. **Queries.sql**: קובץ המכיל את כל שאילתות ה-SELECT
-2. **Constraints.sql**: קובץ עם האילוצים שהוספנו למסד הנתונים
-3. **RollbackCommit.sql**: קובץ המכיל את פעולות הטרנזקציות, rollback ו-commit
-4. **backup2**: קובץ גיבוי מעודכן של מסד הנתונים
-5. **README.md**: קובץ הדוח המפורט (מסמך זה)
+* **backup** – תיקיית גיבויים כלליים שנשמרו במהלך העבודה.
+* **combined_ERD_DSD** – קבצי ERD ו-DSD המשולבים לאחר האינטגרציה הסופית.
+* **gym_people_ERD_DSD** – דיאגרמות ישויות-קשרים ומבנה נתונים עבור תת-המערכת של האנשים במכון.
+* **original_ERD_DSD** – הקבצים המקוריים של ERD ו-DSD טרם השלב האינטגרטיבי.
+* **Integrate.sql** – קובץ שמכיל את פעולות האינטגרציה בין הסכמות: `ALTER`, `INSERT`, `UPDATE`, ויצירת טבלאות חדשות.
+* **Views.sql** – קובץ בו מרוכזים כל ה-Views שנוצרו לצרכי ניתוח, כולל שאילתות לדוגמה.
+* **README.md** – דוח טקסטואלי זה, הכולל הסברים, החלטות עיצוביות, וקוד רלוונטי.
 
-כל הקבצים הועלו לגיט עם תיאורים מתאימים בצורת commit נפרד, ונוצר TAG מיוחד לסימון שלב ב של הפרויקט.
+---
+
