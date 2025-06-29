@@ -329,6 +329,20 @@ class SportsInstituteApp:
         tk.Label(header_frame, text="Worker Management",
                  font=("Arial", 18, "bold"), fg="#2c3e50", bg="#ffffff").pack(side="left")
 
+        # Search bar
+        search_frame = tk.Frame(self.content_frame, bg="#ffffff")
+        search_frame.pack(fill="x", padx=10, pady=5)
+
+        tk.Label(search_frame, text="Search:", font=("Arial", 11), bg="#ffffff").pack(side="left")
+        self.worker_search_var = tk.StringVar()
+        search_entry = tk.Entry(search_frame, textvariable=self.worker_search_var, width=30, font=("Arial", 10))
+        search_entry.pack(side="left", padx=5)
+        search_entry.bind("<KeyRelease>", lambda e: self.search_workers())
+
+
+        tk.Button(search_frame, text="Clear", command=self.refresh_workers,
+                  font=("Arial", 10), bg="#95a5a6", fg="white").pack(side="left", padx=5)
+
         # Control buttons
         btn_frame = tk.Frame(header_frame, bg="#ffffff")
         btn_frame.pack(side="right")
@@ -355,9 +369,14 @@ class SportsInstituteApp:
         table_frame = tk.Frame(self.content_frame, bg="#ffffff")
         table_frame.pack(fill="both", expand=True, padx=10, pady=10)
 
+        # Apply style for black header text
+        style = ttk.Style()
+        style.theme_use("clam")  # Use a theme that allows styling
+        style.configure("Treeview.Heading", foreground="black", font=("Segoe UI", 10, "bold"))
+        style.configure("Treeview", font=("Segoe UI", 10), rowheight=28)
+
         # Columns
         columns = ("PID", "First Name", "Last Name", "Job", "Contract", "Date of Deployment")
-
         self.workers_tree = ttk.Treeview(table_frame, columns=columns, show="headings", height=15)
 
         # Configure columns
@@ -379,6 +398,34 @@ class SportsInstituteApp:
         # Double-click to edit
         self.workers_tree.bind("<Double-1>", lambda e: self.edit_worker())
 
+    def search_workers(self):
+        """Search workers by name or job"""
+        query_text = self.worker_search_var.get().strip().lower()
+        if not query_text:
+            self.refresh_workers()
+            return
+
+        try:
+            all_workers = self.worker_ops.get_all_workers()
+            filtered = [
+                worker for worker in all_workers
+                if query_text in str(worker[0]).lower() or
+                   query_text in str(worker[1]).lower() or# first name
+                   query_text in str(worker[2]).lower() or  # last name
+                   query_text in str(worker[3]).lower() or
+                   query_text in str(worker[4]).lower() or
+                   query_text in str(worker[5]).lower()  # job
+            ]
+
+            self.workers_tree.delete(*self.workers_tree.get_children())
+            for worker in filtered:
+                self.workers_tree.insert("", "end", values=worker)
+
+            self.update_status(f"Found {len(filtered)} result(s) for '{query_text}'")
+
+        except Exception as e:
+            messagebox.showerror("Error", f"Search failed: {str(e)}")
+
     def show_suppliers_screen(self):
         """Show suppliers management screen"""
         self.clear_content()
@@ -386,6 +433,18 @@ class SportsInstituteApp:
         # Header
         header_frame = tk.Frame(self.content_frame, bg="#ffffff")
         header_frame.pack(fill="x", padx=10, pady=10)
+        # Add this under the header
+        search_frame = tk.Frame(self.content_frame, bg="#ffffff")
+        search_frame.pack(fill="x", padx=10, pady=5)
+
+        tk.Label(search_frame, text="Search:", font=("Arial", 11), bg="#ffffff").pack(side="left")
+        self.supplier_search_var = tk.StringVar()
+        search_entry = tk.Entry(search_frame, textvariable=self.supplier_search_var, width=30, font=("Arial", 10))
+        search_entry.pack(side="left", padx=5)
+        search_entry.bind("<KeyRelease>", lambda e: self.search_suppliers())
+
+        tk.Button(search_frame, text="Clear", command=self.refresh_suppliers,
+                  font=("Arial", 10), bg="#95a5a6", fg="white").pack(side="left", padx=5)
 
         tk.Label(header_frame, text="Supplier Management",
                  font=("Arial", 18, "bold"), fg="#2c3e50", bg="#ffffff").pack(side="left")
@@ -410,6 +469,29 @@ class SportsInstituteApp:
         self.create_suppliers_table()
         self.refresh_suppliers()
         self.update_status("Suppliers screen loaded")
+
+    def search_suppliers(self):
+        """Search suppliers live"""
+        query = self.supplier_search_var.get().strip().lower()
+        if not query:
+            self.refresh_suppliers()
+            return
+
+        try:
+            all_suppliers = self.supplier_ops.get_all_suppliers()
+            filtered = [
+                s for s in all_suppliers
+                if query in str(s[1]).lower() or  # First Name
+                   query in str(s[2]).lower() or  # Last Name
+                   query in str(s[4]).lower()  # Address
+            ]
+            self.suppliers_tree.delete(*self.suppliers_tree.get_children())
+            for s in filtered:
+                self.suppliers_tree.insert("", "end", values=s)
+
+            self.update_status(f"{len(filtered)} supplier(s) matched")
+        except Exception as e:
+            messagebox.showerror("Error", f"Search failed: {str(e)}")
 
     def create_suppliers_table(self):
         """Create suppliers table"""
@@ -451,6 +533,19 @@ class SportsInstituteApp:
         # Control buttons
         btn_frame = tk.Frame(header_frame, bg="#ffffff")
         btn_frame.pack(side="right")
+
+        # Add this under the header
+        search_frame = tk.Frame(self.content_frame, bg="#ffffff")
+        search_frame.pack(fill="x", padx=10, pady=5)
+
+        tk.Label(search_frame, text="Search:", font=("Arial", 11), bg="#ffffff").pack(side="left")
+        self.equipment_search_var = tk.StringVar()
+        search_entry = tk.Entry(search_frame, textvariable=self.equipment_search_var, width=30, font=("Arial", 10))
+        search_entry.pack(side="left", padx=5)
+        search_entry.bind("<KeyRelease>", lambda e: self.search_equipment())
+
+        tk.Button(search_frame, text="Clear", command=self.refresh_equipment,
+                  font=("Arial", 10), bg="#95a5a6", fg="white").pack(side="left", padx=5)
 
         buttons = [
             ("Add Equipment", self.add_equipment, "#27ae60"),
@@ -495,6 +590,29 @@ class SportsInstituteApp:
 
         self.equipment_tree.bind("<Double-1>", lambda e: self.edit_equipment())
 
+    def search_equipment(self):
+        """Live search for equipment"""
+        query = self.equipment_search_var.get().strip().lower()
+        if not query:
+            self.refresh_equipment()
+            return
+
+        try:
+            all_eq = self.equipment_ops.get_all_equipment()
+            filtered = [
+                eq for eq in all_eq
+                if query in str(eq[1]).lower() or  # Name
+                   query in str(eq[2]).lower() or  # Category
+                   query in str(eq[5]).lower()  # Brand
+            ]
+            self.equipment_tree.delete(*self.equipment_tree.get_children())
+            for eq in filtered:
+                self.equipment_tree.insert("", "end", values=eq)
+
+            self.update_status(f"{len(filtered)} equipment item(s) matched")
+        except Exception as e:
+            messagebox.showerror("Error", f"Search failed: {str(e)}")
+
     def show_relationships_screen(self):
         """Show equipment-supplier relationships screen"""
         self.clear_content()
@@ -509,6 +627,18 @@ class SportsInstituteApp:
         # Control buttons
         btn_frame = tk.Frame(header_frame, bg="#ffffff")
         btn_frame.pack(side="right")
+        # Add this under the header
+        search_frame = tk.Frame(self.content_frame, bg="#ffffff")
+        search_frame.pack(fill="x", padx=10, pady=5)
+
+        tk.Label(search_frame, text="Search:", font=("Arial", 11), bg="#ffffff").pack(side="left")
+        self.relationship_search_var = tk.StringVar()
+        search_entry = tk.Entry(search_frame, textvariable=self.relationship_search_var, width=30, font=("Arial", 10))
+        search_entry.pack(side="left", padx=5)
+        search_entry.bind("<KeyRelease>", lambda e: self.search_relationships())
+
+        tk.Button(search_frame, text="Clear", command=self.refresh_relationships,
+                  font=("Arial", 10), bg="#95a5a6", fg="white").pack(side="left", padx=5)
 
         buttons = [
             ("Add Relationship", self.add_relationship, "#27ae60"),
@@ -552,6 +682,29 @@ class SportsInstituteApp:
         h_scroll.pack(side="bottom", fill="x")
 
         self.relationships_tree.bind("<Double-1>", lambda e: self.edit_relationship())
+
+    def search_relationships(self):
+        """Live search for equipment-supplier relationships"""
+        query = self.relationship_search_var.get().strip().lower()
+        if not query:
+            self.refresh_relationships()
+            return
+
+        try:
+            all_rels = self.es_ops.get_all_equipment_suppliers()
+            filtered = [
+                rel for rel in all_rels
+                if query in str(rel[1]).lower() or  # Equipment Name
+                   query in str(rel[2]).lower() or  # Category
+                   query in str(rel[4]).lower()  # Person Name
+            ]
+            self.relationships_tree.delete(*self.relationships_tree.get_children())
+            for rel in filtered:
+                self.relationships_tree.insert("", "end", values=rel)
+
+            self.update_status(f"{len(filtered)} relationship(s) matched")
+        except Exception as e:
+            messagebox.showerror("Error", f"Search failed: {str(e)}")
 
     def show_reports_screen(self):
         """Show reports and analytics screen"""
