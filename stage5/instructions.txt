@@ -1,6 +1,10 @@
 הפעל את מסד הנתונים PostgreSQL (ודא שהסכמה נטענה מראש).
 שנה בdatabase את הנתונים לפי ההזדאות
+
 הפעל את הממשק הגרפי ע"י הרצת הקובץ:
+
+להכנס ל:
+DBProject\stage5\gym_database_stage5
 
 python main.py
 
